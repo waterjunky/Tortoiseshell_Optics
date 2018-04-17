@@ -1,0 +1,284 @@
+/* Universal Styles */
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.4;
+  color: black;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* Header and Nav Styles */
+
+header {
+  height: 30rem;
+  background-image: url("../../resources/images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header .container {
+  position: relative;
+  top: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: cadetblue;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  padding-right: 2rem;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.container.headline-box {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  left: 2rem;
+  top: 10rem;
+}
+
+.headline {
+  background-color: white;
+  padding: 1.5rem 5rem;
+  text-align: center;
+  width: 45%;
+}
+
+@media only screen and (max-width: 960px) {
+
+  header {
+    height: 22rem;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  header .container {
+    top: 0;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+
+  .container.headline-box {
+    left: 0;
+    top: 5rem;
+  }
+
+  .headline {
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  nav ul {
+      display: none;
+    }
+
+    h1 {
+      font-size: 1rem;
+    }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .brand {
+    display: none;
+  }
+
+  .container.headline-box {
+    left: 0;
+    top: 9rem;
+  }
+
+  .headline {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 0;
+    width: 100%;
+  }
+
+}
+
+/* Highlight Section Styles */
+
+.container.highlights {
+  display: flex;
+  justify-content: center;
+  height: 8rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 5rem;
+  padding: 0 3rem;
+}
+
+.highlight img.vertical-icon {
+  width: 3.5rem;
+}
+
+.highlight img.horizontal-icon {
+  width: 5rem;
+}
+
+@media only screen and (max-width: 470px) {
+
+  .container.highlights {
+    margin-top: 3.77rem;
+    margin-bottom: 2.23rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+
+  p {
+    font-size: 0.77rem;
+  }
+
+  .highlight {
+    padding-bottom: 1.54rem;
+    width: 100%;
+  }
+
+  .highlight img {
+    padding-bottom: 1.54rem;
+  }
+
+}
+
+/* Info section styles */
+
+.container.info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.info-container {
+  width: 35%;
+  margin:0 2.5%;
+}
+
+.info-title {
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 470px) {
+
+  .container.info {
+    flex-direction: column;
+  }
+
+  .info-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .info-title {
+    background-color: cadetblue;
+    padding: 0.5rem 0rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .philosophy {
+    padding-bottom: 4rem;
+  }
+
+}
+
+/* Footer Styles */
+
+footer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 4rem;
+  background-color: azure;
+}
+
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 470px){
+
+  footer {
+    justify-content: center;
+  }
+
+  footer span {
+    display: none;
+  }
+
+}
